@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoodieSoft - Menu</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans & Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#fffbff",
+                      "secondary-fixed-dim": "#9bcbf8",
+                      "surface-container": "#e6eeff",
+                      "on-error-container": "#93000a",
+                      "surface-tint": "#0060ac",
+                      "outline": "#717783",
+                      "outline-variant": "#c1c7d3",
+                      "surface-container-highest": "#d5e3fd",
+                      "tertiary-fixed-dim": "#ffb953",
+                      "on-tertiary-fixed-variant": "#633f00",
+                      "tertiary": "#7f5300",
+                      "tertiary-fixed": "#ffddb4",
+                      "on-primary-fixed": "#001c39",
+                      "on-surface-variant": "#414751",
+                      "background": "#f8f9ff",
+                      "on-tertiary-fixed": "#291800",
+                      "inverse-surface": "#233144",
+                      "secondary-container": "#a1d1fe",
+                      "tertiary-container": "#a06900",
+                      "surface": "#f8f9ff",
+                      "inverse-on-surface": "#ebf1ff",
+                      "primary-fixed": "#d4e3ff",
+                      "on-background": "#0d1c2f",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#fdfcff",
+                      "secondary-fixed": "#cde5ff",
+                      "inverse-primary": "#a4c9ff",
+                      "primary": "#005da7",
+                      "error": "#ba1a1a",
+                      "primary-container": "#2976c7",
+                      "on-surface": "#0d1c2f",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#004883",
+                      "on-secondary-fixed": "#001d32",
+                      "on-secondary-container": "#265a81",
+                      "primary-fixed-dim": "#a4c9ff",
+                      "on-secondary-fixed-variant": "#104a70",
+                      "error-container": "#ffdad6",
+                      "surface-container-low": "#eff4ff",
+                      "surface-bright": "#f8f9ff",
+                      "secondary": "#30628a",
+                      "surface-dim": "#ccdbf4",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#d5e3fd",
+                      "surface-container-high": "#dde9ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Be Vietnam Pro"]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface font-body text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-blue-50/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-blue-900/5 tonal-shift-surface-low">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-blue-800 dark:text-blue-200 font-headline">FoodieSoft</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="index.html">Home</a>
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600 transition-colors" href="menu.html">Menu</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="order.html">Orders</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative hidden sm:block">
+<input class="bg-surface-container-lowest border-none rounded-xl py-2 pl-4 pr-10 text-sm focus:ring-2 focus:ring-primary/10 transition-all w-48 lg:w-64" placeholder="Search menu..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-slate-400" data-icon="search">search</span>
+</div>
+<button class="p-2 text-blue-700 dark:text-blue-400 hover:bg-blue-100 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<img alt="User profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-blue-100" data-alt="close up professional portrait of a smiling user with soft bokeh urban background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDsF1f8vv6I1WFrAuPmd-FxIxD9P0WFVjAUcdhT-8DJB1AH1D2c8EhBeXYzqJVhPy8UJGhPmHlnpJYFnm9NqR-_aGaeCVfG9uK6ZSZFZHt7jsU8hvJ-iLnQDh--OmNSkQnzKvKgsMJABEFDZnDEGxYNclhEPyZ2_S7IpnGnmT4M_djittLH8Qf0VDsXVVltTXpB8_3OHOg7vgOyVdDAjYKyhvVIoen6y20kcUs3_fMNkDu6f3YY5_EAZdD5C-sQIQcF0oxXiRYt-Zz"/>
+</div>
+</div>
+</nav>
+<!-- Main Content Shell -->
+<main class="pt-24 pb-32 md:pb-12 max-w-7xl mx-auto px-6">
+<!-- Header Section -->
+<header class="mb-12">
+<h1 class="text-4xl md:text-5xl font-extrabold font-headline text-on-surface tracking-tight mb-4">Curated Culinary Journey</h1>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed">Experience a hand-picked selection of gourmet flavors, prepared with the finest ingredients and delivered with care to your sanctuary.</p>
+</header>
+<!-- Category Filters -->
+<div class="flex overflow-x-auto space-x-4 pb-8 no-scrollbar">
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-primary text-on-primary font-semibold shadow-lg shadow-primary/20 transition-all active:scale-95">All Collections</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium hover:bg-surface-container-highest transition-all">Artisan Bowls</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium hover:bg-surface-container-highest transition-all">Signature Pastas</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium hover:bg-surface-container-highest transition-all">Botanical Salads</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium hover:bg-surface-container-highest transition-all">Ocean Prime</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium hover:bg-surface-container-highest transition-all">Sweet Curations</button>
+</div>
+<!-- Bento Grid Menu Items -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Item 1: Featured (Span 2 on medium) -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(48,98,138,0.08)] md:col-span-2 lg:col-span-1">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vibrant mediterranean harvest bowl with roasted chickpeas, kale, and tahini dressing on a minimalist azure background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKt7-dFGSS2bWCoJCz1-w8w8L7V8QZmpO7xV2cXgJB1zC9oJNawaayY-asAfg_Ij8w7WQGqZ0b0Y4UhQzi_RdS_XuPVb9q7gOPsLnyEQDIlVcOg288kbQVjZJ0yd14OfXeycezG2r0BIFKml3qXVcL_1XnEDNTJdy-Tad9CBXNMfsEL7ze3tLN2TkKUQa-Qa1QUc6jklkn_jtVxh59uCUDKG7ZtlfNgsc-4BrvdpuQ3cO-i4RnT9NuK95NGtEu4la25gPLbwAvcTq9"/>
+<div class="absolute top-4 left-4 bg-tertiary-fixed text-tertiary px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+                        BEST SELLER
+                    </div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold font-headline text-on-surface">Midnight Truffle Gnocchi</h3>
+<span class="text-primary font-bold">$24.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Hand-rolled potato gnocchi tossed in a decadent black truffle cream sauce with forest mushrooms.</p>
+<button onclick="window.location.href='konfirmasi.html'" class="w-full py-3 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Add to Experience
+                    </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(48,98,138,0.08)]">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="crisp citrus salmon fillet with asparagus spears on a clean white ceramic plate under soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCemJt1Hm3KPePCMDNB7N8dv79RjuX63OJ6FrtbHLba_ElyD1C4yyk7SCXV4GVn3h8vDEUjrMmUgGBk8gph0-udsFjJRoqE3k508Wby6yKjEE8VSAZJnCummeH_eJgiHMJ0bQYu0H6VR7vu67j7pOfvBIWAzG6V2t87unf9jXYJGu4IXgsj0usAK3e7Iav04JjEyBxPfwdfYBs42Vqi9EB-VrCEMdJvbhomU39l341GhBwjNzVadVqo_-CmTimSYweuR-p5NATgjZi"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold font-headline text-on-surface">Citrus Zest Salmon</h3>
+<span class="text-primary font-bold">$28.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Wild-caught Atlantic salmon seared with a lemon-herb crust and garden-fresh asparagus.</p>
+<button class="w-full py-3 bg-surface-container-high text-primary rounded-full font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+                        Select Item
+                    </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(48,98,138,0.08)]">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close up of colorful vegan buddha bowl with avocado radish and quinoa in a matte blue bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCut2LHBYYj3WrBaGwlD8unkSBB_7ARSvuLPaTR31HrjlggX0o1TPopESQTnue6Izc_fK1z6xIiZ44ookn7OHEgK49nO_rT5dg53wxmNZde-2PXCaPWDeYo14_cAXzhEzo5dgtdOzuaQNwXZDaAuQtokQ_JTlJSdajmhKz-Zyr9LKN5rKG9gxB33KYrEwyZFk45LI7kh9crV3w2nBes5cbEP3PWeZpXg1del-DrjOFGtJOX_xyJP-UNRsZ_mWyni6jEuRdGaerMjPSC"/>
+<div class="absolute top-4 left-4 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold">VEGAN</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold font-headline text-on-surface">Zen Garden Bowl</h3>
+<span class="text-primary font-bold">$19.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Tri-color quinoa base with ripe avocado, pickled watermelon radish, and ginger-miso glaze.</p>
+<button class="w-full py-3 bg-surface-container-high text-primary rounded-full font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+                        Select Item
+                    </button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(48,98,138,0.08)]">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="artisan neapolitan pizza with fresh buffalo mozzarella and basil leaves on a rustic stone background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQFrEwUhFZtsaRcjhcDfFSefJvaHnYu4567CZRP012AKZ69LjGGVUYWLtoCRriK9jPaVxcU_S985xUC_aIQ9qCk-JR2LOB0UbZG-6oNsi4KySxQAdFj-I1WFjQ468hZ1Pyx1CUyACHf3fJ01pzsZKO4jHR6K5ABfwoDisnyQ_V0m8JLCQUgAJzaYg_3ivmlvvk2ENM2LQjc1_XVpRWAsNC4SSFk-RYuuGppLnTIDbIkHQrlzGRYsAt-DjbJGdLHKsGLzs550kZsBqy"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold font-headline text-on-surface">Heirloom Margherita</h3>
+<span class="text-primary font-bold">$21.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Slow-fermented dough topped with heirloom tomato sugo, buffalo mozzarella, and basil.</p>
+<button class="w-full py-3 bg-surface-container-high text-primary rounded-full font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+                        Select Item
+                    </button>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(48,98,138,0.08)]">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="truffle infused beef carpaccio with microgreens and shaved parmesan on a slate plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXTsz4npMkw31pl46Y2BSPd4xHT14TRZrhienvHbW5OyuRafkQRuu1jAa8MAIEboF3sjJ22j59RjXS7S6uuG47JOdAPl45VZn_Wd2elon6Onf-DQBz4e3NJN09jO0LL77to-I4yBbtqLIoIoONk4SRtGxBS-EZR2SWPcvKvyYpnFahBVsAQ34bRX9pKSUOy4_ak58FYmyA0E0j0uhsAsDVVP48S1aBKGQ2ClYWGD9dm-u4dm_2XB1VAktiTvpuMCqZwLGIGK9QHvXT"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold font-headline text-on-surface">Azure Prime Carpaccio</h3>
+<span class="text-primary font-bold">$26.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Paper-thin wagyu beef served with truffle aioli, capers, and aged Parmigiano-Reggiano.</p>
+<button class="w-full py-3 bg-surface-container-high text-primary rounded-full font-bold flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+                        Select Item
+                    </button>
+</div>
+</div>
+<!-- Item 6: Special Curation -->
+<div class="group bg-primary rounded-xl overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(0,93,167,0.15)] flex flex-col justify-center items-center text-center p-8 text-on-primary">
+<span class="material-symbols-outlined text-6xl mb-4 opacity-50" data-icon="restaurant">restaurant</span>
+<h3 class="text-2xl font-bold font-headline mb-4">Chef's Custom Tasting</h3>
+<p class="text-primary-fixed-dim text-sm mb-8 leading-relaxed">Can't decide? Let our Master Chef curate a three-course journey tailored to your palate.</p>
+<button class="px-8 py-3 bg-white text-primary rounded-full font-bold hover:scale-105 transition-transform">
+                    Customize Now
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-3xl border-t border-blue-100/20 md:hidden bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-[0_-10px_30px_rgba(48,98,138,0.05)] tonal-shift-surface-container">
+<div class="flex justify-around items-center px-4 pb-6 pt-2">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-be-vietnam-pro text-[10px] font-semibold">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-100 rounded-2xl px-4 py-1 scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-be-vietnam-pro text-[10px] font-semibold">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+<span class="font-be-vietnam-pro text-[10px] font-semibold">Cart</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-be-vietnam-pro text-[10px] font-semibold">Profile</span>
+</div>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="w-full pt-12 pb-24 md:pb-12 bg-blue-50 dark:bg-slate-950 no-border-tonal-surface-shift">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-plus-jakarta text-lg font-bold text-blue-900 dark:text-blue-100 mb-4">FoodieSoft</div>
+<p class="font-be-vietnam-pro text-sm text-slate-500 leading-relaxed">© 2024 FoodieSoft. Curating culinary journeys.</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-blue-600 transition-transform hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-transform hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-blue-600 transition-transform hover:translate-x-1 inline-block" href="#">Help Center</a></li>
+<li><a class="text-slate-500 hover:text-blue-600 transition-transform hover:translate-x-1 inline-block" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4">Connect</h4>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="chat">chat</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="alternate_email">alternate_email</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
